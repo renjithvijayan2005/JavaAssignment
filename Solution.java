@@ -58,6 +58,20 @@ class Chicken extends Bird{
 	
 }
 
+// parrot implementation
+
+class Parrot extends Bird implements flyingBirds
+{
+
+	@Override
+	public void fly() {
+		System.out.println("I am flying");
+		
+	}
+}
+
+
+
 // Finally the main class.
 public class Solution {
 public static void main(String[] args) {
@@ -79,5 +93,16 @@ d1.fly();
 // Roosters belongs here.
 Chicken rooster=new Chicken();
 rooster.say("Male");
+
+Parrot p1= new Parrot();
+p1.say("Woof, woof");
+Parrot p2= new Parrot();
+p2.say("Meow");
+Parrot p3= new Parrot();
+p3.say("Cock-a-doodle-doo");
+
 }
+
+
+
 }
