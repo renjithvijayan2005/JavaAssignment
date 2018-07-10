@@ -70,6 +70,17 @@ class Parrot extends Bird implements flyingBirds
 	}
 }
 
+// Fish
+
+class Fish implements swimmer
+{
+
+	@Override
+	public void swim() {
+		System.out.println("I am Swimming");	
+		
+	}
+	}
 
 
 // Finally the main class.
