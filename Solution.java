@@ -74,6 +74,15 @@ class Parrot extends Bird implements flyingBirds
 
 class Fish implements swimmer
 {
+	String Size="";
+	String color="";
+	String behaviour="";
+	Fish(String Siz, String colr, String behavr)
+	{
+		 Size=Siz;
+		 color=colr;
+		 behaviour=behavr;
+	}
 
 	@Override
 	public void swim() {
@@ -111,6 +120,11 @@ Parrot p2= new Parrot();
 p2.say("Meow");
 Parrot p3= new Parrot();
 p3.say("Cock-a-doodle-doo");
+
+
+// Fish Implementation
+Fish Shark=new Fish ("Large","Grey","Eat other fish");
+Fish Clownfish=new Fish ("Small","Orange","Make Jokes");
 
 }
 
